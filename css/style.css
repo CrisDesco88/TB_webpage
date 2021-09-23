@@ -1,7 +1,9 @@
 /*======================Globales==========================*/
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+*{
+    margin: 0;
+}
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
@@ -26,4 +28,43 @@ body {
 
 #imagen-about{
     max-width: 75%;
+}
+
+/*====================SERVICIOS=========================*/
+
+.btn-item {
+    background: #005eb1;
+    display: block;
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+    border-bottom: 2px solid rgba(142, 142, 142, 0.5);
+    margin: 0;
+
+}
+
+.item-content {
+    background: #ececec;
+    overflow: hidden;
+    max-height: 0px;
+    opacity: 0;
+}
+
+.active + .item-content {
+    max-height: 1000px;
+    padding: 10px;
+    opacity: 1;
+}
+
+.btn-item.active {
+    background: crimson;
+}
+
+.btn-item:after {
+    content: '\002b';
+    float: right;
+}
+
+.btn-item.active:after{
+    content: '\02012';
 }
