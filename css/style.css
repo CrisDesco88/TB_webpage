@@ -9,6 +9,13 @@ body {
     overflow-x: hidden;
 }
 
+section {
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+    padding-top: 5vmax;
+    padding-bottom: 5vmax;
+}
+
 /*========================MENU==============================*/
 
 #menu a{
@@ -33,13 +40,15 @@ body {
 /*====================SERVICIOS=========================*/
 
 .btn-item {
-    background: #005eb1;
+    background: rgb(0 94 177 / 0%);
     display: block;
-    color: white;
+    color: rgb(49 92 156);
     padding: 8px;
     font-weight: bold;
-    border-bottom: 2px solid rgba(142, 142, 142, 0.5);
-    margin: 0;
+    border-bottom: 1px solid rgba(142, 142, 142, 0.5);
+    margin: 0px;
+    /* border-radius: 4px; */
+    cursor: pointer;
 
 }
 
@@ -48,6 +57,7 @@ body {
     overflow: hidden;
     max-height: 0px;
     opacity: 0;
+    transition: 0.4s ease-in-out;
 }
 
 .active + .item-content {
@@ -57,7 +67,9 @@ body {
 }
 
 .btn-item.active {
-    background: crimson;
+    background: rgb(49 92 156);
+    color: white;
+    border-radius: 4px;
 }
 
 .btn-item:after {
