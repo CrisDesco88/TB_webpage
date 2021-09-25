@@ -38,7 +38,10 @@ section {
     padding-top: 5vmax;
     padding-bottom: 5vmax;
 }
-
+/*========================ENCABEZADO==============================*/
+    #encabezado {
+        background-color: rgb(49 92 156);
+    }
 
 /*========================MENU==============================*/
 
@@ -108,6 +111,14 @@ section {
 
 .btn-item.active:after{
     content: '\02012';
+}
+
+.item-content > p {
+    font-size: 1.25rem;
+}
+
+.item-content > ul > li {
+    font-size: 1.1rem;
 }
 
 /*====================CONTACTO=========================*/
