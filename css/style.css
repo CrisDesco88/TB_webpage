@@ -1,12 +1,35 @@
 /*======================Globales==========================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap'); */
+
 *{
     margin: 0;
 }
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-size: 3rem !important;
+}
+
+p {
+    font-size: 1.5rem;
+    color:#6b6b6b;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+a {
+    font-size:1.25rem;
 }
 
 section {
@@ -16,18 +39,24 @@ section {
     padding-bottom: 5vmax;
 }
 
+
 /*========================MENU==============================*/
 
 #menu a{
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 1.5rem;
     color: #3f3f3f;
 }
 
+#menu a:hover {
+    font-weight: bold;
+    color: black;
+    text-decoration-line: underline;
+}
+
 /*====================SLIDER DE IMAGENES=========================*/
-.carousel-inner > image{
-    max-height: 39rem;
-    
+.carousel-item.active > .img-fluid {
+    max-height: 900px !important;
+
 
 }
 
@@ -79,4 +108,10 @@ section {
 
 .btn-item.active:after{
     content: '\02012';
+}
+
+/*====================CONTACTO=========================*/
+
+.form-control {
+    font-size: 1.25rem;
 }
