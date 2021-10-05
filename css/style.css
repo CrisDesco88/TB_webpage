@@ -88,6 +88,15 @@ section {
     height: auto !important;
 }
 
+.carousel-caption {
+    background-color: rgb(10 9 9 / 65%);
+    border-radius: 5px;
+}
+
+.carousel-caption > p {
+    color: #f7f7f7;
+}
+
 /*====================ABOUT=========================*/
 
 #Nosotros {
