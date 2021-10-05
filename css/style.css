@@ -43,6 +43,23 @@ section {
     padding-bottom: 5vmax;
 }
 /*========================ENCABEZADO==============================*/
+    #ir-arriba-btn {
+        position: fixed;
+        z-index: 1000;
+        right: 25px;
+        bottom: 25px;
+        width: 64px;
+        height: 64px;
+        color: rgb(49 92 156);
+        text-align: center;
+        transition: all .2s;
+    }
+
+    #ir-arriba-btn:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+/*========================ENCABEZADO==============================*/
     #encabezado {
         background-color: rgb(49 92 156);
     }
@@ -95,7 +112,6 @@ section {
     font-weight: bold;
     border-bottom: 1px solid rgba(142, 142, 142, 0.5);
     margin: 0px;
-    /* border-radius: 4px; */
     cursor: pointer;
 
 }
