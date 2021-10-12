@@ -366,24 +366,24 @@
                 </div>
                 <form class="row g-3">
                     <div class="mb-2">
-                      <label class="form-label">Nombre y Apellido</label>
-                      <input type="text" class="form-control" placeholder="Tu nombre y apellido" aria-label="Username">
+                      <label for="nombreApellido" class="form-label">Nombre y Apellido</label>
+                      <input type="text" class="form-control" id="nombreApellido" placeholder="Tu nombre y apellido" aria-label="Username">
                     </div>
                     <div class="mb-2">
-                      <label for="inputEmpresa4" class="form-label">Empresa</label>
-                      <input type="text" class="form-control" id="inputEmpresa4" placeholder="Tu empresa">
+                      <label for="inputEmpresa" class="form-label">Empresa</label>
+                      <input type="text" class="form-control" id="inputEmpresa" placeholder="Tu empresa">
                     </div>
                     <div class="mb-2">
-                      <label for="exampleFormControlInput1" class="form-label">Dirección de Email</label>
-                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+                      <label for="emailInput" class="form-label">Dirección de Email</label>
+                      <input type="email" class="form-control" id="emailInput" placeholder="nombre@ejemplo.com">
                     </div>
                     <div class="mb-2">
-                      <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
-                      <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="(Código de área) Número">
+                      <label for="telefonoInput" class="form-label">Teléfono</label>
+                      <input type="tel" class="form-control" id="telefonoInput" placeholder="(Código de área) Número">
                     </div>
                     <div class="mb-2">
-                      <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                      <label for="mensajeInput" class="form-label">Comentarios</label>
+                      <textarea class="form-control" id="mensajeInput" rows="5"></textarea>
                     </div>
                     <div class="col-12">
                       <div class="form-check">
@@ -394,7 +394,7 @@
                       </div>
                     </div>
                     <div class="col-12">
-                      <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                      <button type="button" class="btn btn-primary btn-lg" id="btnSubmit">Enviar</button>
                     </div>
                 </div>
                 </form>
@@ -431,6 +431,8 @@
         crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/consulta.js"></script>
+    <?php include("mail.php");?>
 </body>
 
 </html>
