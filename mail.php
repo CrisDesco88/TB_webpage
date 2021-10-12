@@ -35,6 +35,7 @@ $body .= 'Nombre: ' . $nombre . "\r\n";
 $body .= 'Empresa: ' . $empresa . "\r\n";
 $body .= 'Email: '. $email . "\r\n";
 $body .= 'Telefono: '. $telefono . "\r\n";
+
 $body .= 'Mensaje: '. $mensaje . "\r\n";
 
 $headers = 'From: ' . $email . "\r\n" .
