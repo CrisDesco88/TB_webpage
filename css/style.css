@@ -1,8 +1,5 @@
 /*======================Globales==========================*/
 
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap'); */
-
 html {
     box-sizing: border-box;
 }
@@ -37,10 +34,10 @@ a {
 }
 
 section {
-    padding-left: 3vw !important;
+    /* padding-left: 3vw !important;
     padding-right: 3vw !important;
     padding-top: 5vmax;
-    padding-bottom: 5vmax;
+    padding-bottom: 5vmax; */
 }
 /*========================ENCABEZADO==============================*/
     #ir-arriba-btn {
@@ -67,9 +64,16 @@ section {
 /*========================MENU==============================*/
 
 #menu {
-    background-color: #ffff !important;
-    box-shadow: 0 0 2px 2px rgb(0 0 30 / 30%)
+    background-color: #ffff;
+    /* box-shadow: 0 0 2px 2px rgb(0 0 30 / 30%) */
 }
+
+@media (min-width:600px) {
+    .inner-navbar{
+        width: 90%;
+    }
+}
+
 #menu a{
     font-size: 1.5rem;
     color: #3f3f3f;
@@ -107,9 +111,6 @@ section {
     font-size: 1.5rem !important;
     color:#6b6b6b !important;
 }
-/* #imagen-about{
-    max-width: 75%;
-} */
 
 /*====================SERVICIOS=========================*/
 
