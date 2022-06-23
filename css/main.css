@@ -1,12 +1,21 @@
 /*======================Globales==========================*/
+:root {
+    --red-color: #ff7c70;
+    --blue-color: #5589c4;
+    --white-color: #fff;
+    --black-color: #000;
 
+}
 html {
     box-sizing: border-box;
+    
 }
 
 *{
     margin: 0;
+    padding: 0;
 }
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     overflow-x: hidden;
@@ -17,12 +26,20 @@ h1,h2,h3,h4,h5 {
 }
 
 h1 {
-    font-size: 3rem !important;
+    font-size: 2rem;
+    margin: 0.3em 0;
+}
+
+@media (min-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+        
+    }
 }
 
 p {
-    font-size: 1.5rem;
-    color:#6b6b6b;
+    font-size: 1.25rem;
+    color:var(--black-color);
 }
 
 label {
@@ -33,11 +50,34 @@ a {
     font-size:1.25rem;
 }
 
-section {
-    /* padding-left: 3vw !important;
-    padding-right: 3vw !important;
-    padding-top: 5vmax;
-    padding-bottom: 5vmax; */
+.section-title {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spacer {
+    display: block;
+    height: 5px;
+    width: 100px;
+    background-color: var(--red-color);
+    /* margin-bottom: 2em; */
+}
+
+@media (min-width: 600px) {
+    .spacer {         
+        width: 150px;     
+    }
+}
+
+.r-uline-txt {
+    text-decoration: underline var(--red-color);
+}
+.b-uline-txt {
+    text-decoration: underline var(--blue-color);
 }
 /*========================ENCABEZADO==============================*/
     #ir-arriba-btn {
@@ -45,7 +85,7 @@ section {
         z-index: 1000;
         right: 25px;
         bottom: 25px;
-        width: 64px;
+        /* width: 64px; */
         height: 64px;
         color: rgb(49 92 156);
         text-align: center;
@@ -65,7 +105,7 @@ section {
 
 #menu {
     background-color: #ffff;
-    /* box-shadow: 0 0 2px 2px rgb(0 0 30 / 30%) */
+    box-shadow: 0 0 2px 2px rgb(0 0 30 / 30%)
 }
 
 @media (min-width:600px) {
@@ -89,7 +129,6 @@ section {
 
 .img-fluid {
     width: 100% !important;
-    height: auto !important;
 }
 
 .carousel-caption {
@@ -113,6 +152,83 @@ section {
 }
 
 /*====================SERVICIOS=========================*/
+.servicios {
+    background-color: var(--blue-color);
+    padding: 0;
+}
+.service-grid {
+    display: grid;
+    grid-template-columns:minmax(auto, 200px);
+    gap: 20px 50px;
+    justify-content: center;
+}
+    
+.service-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-title {
+    background-color: var(--red-color);
+    width: 100%;
+    margin: 0;
+    padding: 0.25em;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+
+.icon-service{
+    height: 75px;
+    width: 75px;
+    
+    /* padding: 15px;
+    border-radius: 50%;
+    box-sizing: content-box; */
+}
+
+.icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.title-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--black-color);
+    font-weight: 900;
+}
+
+.title-link:hover {
+    color: var(--white-color);
+}
+
+
+
+
+@media (min-width: 450px) {
+    .service-grid {
+        grid-template-columns: repeat(2, 200px);
+        
+    }
+}
+
+@media (min-width: 900px) {
+    .service-grid {
+        grid-template-columns: repeat(3, 200px);
+        
+    }
+}
+
 
 .btn-item {
     background: rgb(0 94 177 / 0%);
@@ -170,4 +286,9 @@ section {
 }
 .form-control {
     font-size: 1.25rem;
+}
+
+/*====================FOOTER=========================*/
+.b-bg-color {
+    background: var(--blue-color);
 }
