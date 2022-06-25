@@ -98,7 +98,7 @@ a {
     }
 /*========================ENCABEZADO==============================*/
     #encabezado {
-        background-color: rgb(49 92 156);
+        background-color: var(--blue-color);
     }
 
 /*========================MENU==============================*/
