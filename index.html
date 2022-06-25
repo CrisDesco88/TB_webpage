@@ -5,10 +5,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
-
     <!-- Local css -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +13,8 @@
     <link rel="stylesheet" href="./css/styles.css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,500,0,0" />
 
     <!-- Scrollreveal JS -->
     <script src="./js/scrollreveal.js"></script>
@@ -40,9 +38,9 @@
         <p class="text-light mb-0 p-2 fs-3">Hacemos las cosas mejor.Hacemos cosas mejores.</p>
     </header>
     <nav class="navbar navbar-expand-lg mx-auto navbar-light p-0 sticky-top" id="menu">
-        <div class="container p-0 inner-navbar">
+        <div class="container px-2 inner-navbar">
             <a class="navbar-brand p-0" href="#">
-                <img src="./img/20210925_203723_0000.png" alt="" width="100" height="100"
+                <img src="./img/logo_tb.png" alt="" width="100" height="100"
                     class="d-inline-block align-text-top logo-img">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -132,11 +130,14 @@
 
     <section class="container" id="Nosotros">
         <div class="row">
-            <div class="col-12 col-xl-6 p-0" id="nosotros-container">
+            <div class="col-12 col-xl-6 py-4" id="nosotros-container">
                 <h1 class="w-75 mx-auto izq-der" style="white-space:pre-wrap">Quienes somos:</h1>
+                
                 <p class="w-75 mx-auto izq-der-delay">Somos  un grupo de profesionales interdisciplinario  dedicados a brindar un servicio integral a nuestros clientes actuales y potenciales.</p>
+                <span class="spacer"></span>
                 <h3 class="w-75 mx-auto izq-der">Nuestra Misión:</h3>
                 <p class="w-75 mx-auto izq-der-delay">Cada labor profesional encomendada se analiza, planifica, desarrolla, ejecuta, y verifica permanente, permitiendo un acompañamiento al cliente, de cada etapa a cumplir.</p>
+                <span class="spacer"></span>
                 <h3 class="w-75 mx-auto mt-4 izq-der">Nuestra Visión:</h3>
                 <p class="w-75 mx-auto izq-der-delay">Que en la sumatoria para lograr el éxito de ustedes, este nuestro aporte  en calidad, equipo, rapidez y creatividad. Logrando una mejora continua y el reconocimiento en el mercado.</p>
             </div>
@@ -146,16 +147,21 @@
             </div>
 
         </div>
-        <div class="col-12 pb-4 aparecer">
-            <h1 class="w-75 mx-auto">Política de calidad de TB</h1>
-            <p class="w-75 mx-auto my-0">El equipo profesional y administrativo se compromete a brindar servicios y /o productos  a la necesidad de cada cliente. Para ello se capacita en forma permanente,  y  se motiva  para lograr  nuevas propuestas. Todo ello en un marco de lealtad,  transparencia y confidencialidad.</p>
+        
+        <div class="col-12 pb-4 aparecer d-flex justify-content-center">
+            <div class="vr pc-vr"></div>
+            <div class="col-10">
+                <h1 class=" w-100 pc-ttl">Política de calidad de TB</h1>
+                <p class=" w-100 pc-txt">El equipo profesional y administrativo se compromete a brindar servicios y /o productos  a la necesidad de cada cliente. Para ello se capacita en forma permanente,  y  se motiva  para lograr  nuevas propuestas. Todo ello en un marco de lealtad,  transparencia y confidencialidad.</p>
+            </div>
+            
         </div>
     </section>
 
     <!--============================================================= -->
     <!-- SERVICIOS -->
     <!--============================================================= -->
-    <section class="container-fluid  mx-auto servicios" id="servicios">
+    <section class="container-fluid  mx-auto servicios" id="Servicios">
         <div class="section-title col-sm-3 mx-auto">
             <h1>Servicios</h1>
             <span class="spacer"></span>
@@ -163,227 +169,61 @@
         
         <div class="service-grid py-5">
             <div class="service-card">
-                <a href="./servicios/calidad.html" target="_blank" class="icon-link"><img class="icon-service"src="./img/portapapeles.png" alt="" class="icon-services"></a>
+                <a href="./servicios/calidad.html" target="_blank" class="icon-link">
+                    <span class="material-symbols-rounded">workspace_premium</span>
+                </a>
                 <a href="./servicios/calidad.html" target="_blank" class="title-link"><h3 class="service-title">Calidad</h3></a>
             </div>   
             <div class="service-card">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="icon-link"><img class="icon-service"src="./img/portapapeles.png" alt="" class="icon-services"></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="title-link"><h3 class="service-title">Producción</h3></a>
+                <a href="./servicios/produccion.html" target="_blank" rel="noopener noreferrer" class="icon-link">
+                    <span class="material-symbols-rounded">factory</span>
+                </a>
+                <a href="./servicios/produccion.html" target="_blank" rel="noopener noreferrer" class="title-link"><h3 class="service-title">Producción</h3></a>
             </div>   
             <div class="service-card">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="icon-link"><img class="icon-service"src="./img/portapapeles.png" alt="" class="icon-services"></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="title-link"><h3 class="service-title">Asuntos regulatorios</h3></a>
+                <a href="./servicios/asunt_regulatorios.html" target="_blank" rel="noopener noreferrer" class="icon-link">
+                    <span class="material-symbols-rounded">assured_workload</span>
+                </a>
+                <a href="./servicios/asunt_regulatorios.html" target="_blank" rel="noopener noreferrer" class="title-link"><h3 class="service-title">Asuntos regulatorios</h3></a>
             </div>   
             <div class="service-card">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="icon-link"><img class="icon-service"src="./img/portapapeles.png" alt="" class="icon-services"></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="title-link"><h3 class="service-title">Diseño</h3></a>
+                <a href="./servicios/diseño.html" target="_blank" rel="noopener noreferrer" class="icon-link">
+                    <span class="material-symbols-rounded">design_services</span>
+                </a>
+                <a href="./servicios/diseño.html" target="_blank" rel="noopener noreferrer" class="title-link"><h3 class="service-title">Diseño</h3></a>
             </div>   
             <div class="service-card">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="icon-link"><img class="icon-service"src="./img/portapapeles.png" alt="" class="icon-services"></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="title-link"><h3 class="service-title">Medio ambiente</h3></a>
+                <a href="./servicios/medio_amb.html" target="_blank" rel="noopener noreferrer" class="icon-link">
+                    <span class="material-symbols-rounded">recycling</span>
+                </a>
+                <a href="./servicios/medio_amb.html" target="_blank" rel="noopener noreferrer" class="title-link"><h3 class="service-title">Medio ambiente</h3></a>
             </div>   
             <div class="service-card">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="icon-link"><img class="icon-service"src="./img/portapapeles.png" alt="" class="icon-services"></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="title-link"><h3 class="service-title">Calibraciones y validaciones</h3></a>
+                <a href="./index.html" target="_self" rel="noopener noreferrer" class="icon-link">
+                    <span class="material-symbols-rounded">build_circle</span>
+                </a>
+                <a href="./index.html" target="_self" rel="noopener noreferrer" class="title-link"><h3 class="service-title">Calibraciones y validaciones</h3></a>
             </div>   
             <div class="service-card">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="icon-link"><img class="icon-service"src="./img/portapapeles.png" alt="" class="icon-services"></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="title-link"><h3 class="service-title">Capacitación</h3></a>
+                <a href="./servicios/capacitacion.html" target="_blank" rel="noopener noreferrer" class="icon-link">
+                    <span class="material-symbols-rounded">emoji_objects</span>
+                </a>
+                <a href="./servicios/capacitacion.html" target="_blank" rel="noopener noreferrer" class="title-link"><h3 class="service-title">Capacitación</h3></a>
             </div>   
             <div class="service-card">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="icon-link"><img class="icon-service"src="./img/portapapeles.png" alt="" class="icon-services"></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="title-link"><h3 class="service-title">Legal</h3></a>
+                <a href="./index.html" target="_self" rel="noopener noreferrer" class="icon-link">
+                    <span class="material-symbols-rounded">gavel</span>
+                </a>
+                <a href="./index.html" target="_self" rel="noopener noreferrer" class="title-link"><h3 class="service-title">Legal</h3></a>
             </div>   
             <div class="service-card">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="icon-link"><img class="icon-service"src="./img/portapapeles.png" alt="" class="icon-services"></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="title-link"><h3 class="service-title">Otros servicios</h3></a>
+                <a href="./servicios/otros_servicios.html" target="_blank" rel="noopener noreferrer" class="icon-link">
+                    <span class="material-symbols-rounded">business_center</span>
+                </a>
+                <a href="./servicios/otros_servicios.html" target="_blank" rel="noopener noreferrer" class="title-link"><h3 class="service-title">Otros servicios</h3></a>
             </div>   
         </div> 
     </section>
-
-    <!-- <section class="container-fluid w-75 mx-auto" id="Servicios">
-        <div class="row">
-            <div class="col-12 col-lg-6">
-                <h1 class=" mt-4 izq-der">Brindamos:</h1>
-                <p class=" mt-4 lh-lg izq-der-delay">Encontrará Expertos en el área de Aseguramiento de la Calidad con amplia experiencia en gestión basados tanto en las normas genéricas ISO9001: ISO14001, OSHAS 18001,   ISO 13485, ISO 14971, ISO 22000. </p>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="main-container">
-                    <div class="list-container">
-                        <div class="item">
-                            <h3 class="btn-item">Descripción General</h3>
-                            <div class="item-content">
-                                <p>A título de referencia detallamos algunas de las actividades que desarrollamos:</p>
-                                <ul>
-                                    <li>Planificación, implementación, seguimiento y mantenimiento del SGC s/ disposiciones, normativas independiente del sector de actuación y categorización de la empresa.</li>
-                                    <li>Implementacion y preparación para la certificación de normas.</li>
-                                    <li>Tramitaciones de habilitaciones de establecimientos e inscripciones de productos a nivel provincial, nacional e internacional.</li>
-                                    <li>Preparación de la documentación para la elaboración de monografías,  guías de producción, controles de procesos para: especialidades medicinales, productos médicos, odontológicos, estética, domisanitarios, cosmética y alimenticia.</li>
-                                    <li>Análisis de riesgo, análisis de peligros y  puntos críticos de control (HACCP) y validaciones de procesos.</li>
-                                    <li>Capacitaciones al personal: SGC, BPF, BPD, Higiene y Seguridad.</li>
-                                    <li>Auditorías internas, de proveedores.</li>
-                                    <li>Presentaciones en Renpre(Registro Nacional de Precursores Químicos).</li>
-                                    <li>Tratamiento de residuos orgánicos.</li>
-                                    <li>Servicio de calibraciones y Mapeos térmicos.</li>
-                                    <li>Calibraciones Eléctricas.</li>
-                                    <li>Validación y certificaciones de áreas.</li>
-                                    <li>Registraciones sistema Helena (ANMAT), Sifega (ANMAT) ,510K (FDA).</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <h3 class="btn-item">Calidad</h3>
-                            <div class="item-content">
-                                <p>Aplicables  a las Industrias Farmacéuticas, Hospitalarias, Agroalimentarias,  Alimentarias, Veterinarias, Cosméticas, Químicas.<br>
-                                Hacemos:</p>
-                                <ul>
-                                    <li>Implementación, seguimiento y mantenimiento del sistemas de calidad,   independientemente del tamaño y sector de actuación de la empresa.</li>
-                                    <li>Mapeo, Análisis y Mejora Continua de los Procesos.</li>
-                                    <li>Evaluación y monitoreo de los controles requeridos en todas las etapas del proceso de gestión.</li>
-                                    <li>Implementación de Normas ISO: 9001, 9004, 13485, 14971.</li>
-                                    <li>Asesoramiento en Control de No-Conformidades, Acciones Correctivas,  Acciones Preventivas, Reclamos de Clientes y Mejoras Continuas.</li>
-                                    <li>Planificación y  Ejecución de Auditorías de los sistemas de calidad.</li>
-                                    <li>Planificación y Ejecución de Auditorías ISO 9001, ISO 13485.</li>
-                                    <li>Asesoramiento  para el control de los dispositivos de seguimiento y de   medición.</li>
-                                    <li>Capacitación y asesoramiento del  personal responsable del aseguramiento  
-                                        de  la calidad.</li>
-                                    <li>Asesoramiento  y seguimiento para lograr  certificación de la norma  ISO 9001.</li>
-                                    <li>Confección de la documentación requerida en un Sistema de Gestión de  Calidad  (Política de Calidad, Manual de Calidad, Manual de Procedimientos, etc.).</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <h3 class="btn-item">Producción</h3>
-                            <div class="item-content">
-                                <p>Aplicables  a las Industrias Farmacéuticas, Hospitalarias, Agroalimentarias,  Alimentarias, Veterinarias, Cosméticas, Químicas.<br>
-                                    Hacemos:</p>
-                                <ul>
-                                    <li>Monitorización microbiológica de ambientes para procesos asépticos. (control  microbiológico en salas limpias). Aplicación ISO 14644. </li>
-                                    <li>Calificación de equipos: análisis químico y microbiológico.</li>
-                                    <li>Desarrollo e implementación de Sistema de Gestión de seguridad Alimentaria.</li>
-                                    <li>Análisis de Riesgos y Control de Puntos Críticos. (HACCP).</li>
-                                    <li>Validación de procesos.</li>
-                                    <li>Validación de técnicas analíticas.</li>
-                                    <li>Implementación y seguimiento de Buenas Prácticas de Manufactura.</li>
-                                    <li>Implementación y seguimiento Buenas Prácticas de Almacenamiento: importación,  distribución.</li>
-                                    <li>Implementación y seguimiento: Sistema de Gestión Integrado.</li>
-                                    <li>Ensayos aplicables a diferentes materias primas para la industria alimenticia.</li>
-                                    <li>Procesos Operativos, Sanitarios y Tecnológicos de Productos Pesqueros y de la Acuicultura.</li>
-                                    <li>Operaciones Unitarias y Procesamiento de Alimentos - Tratamientos Térmicos.</li>
-                                    <li>Procesos Operativos, Sanitarios y Tecnológicos de Leche y Productos Lácteos. </li>
-                                    <li>Productos y Procesos frutihortícolas con buenas prácticas agrícolas.</li>
-                                    <li>Procesos operativos, sanitarios y tecnológicos de miel.</li>
-                                    <li>Procesos operativos, sanitarios y tecnológicos de carne y productos cárnicos.</li>
-                                    <li>Bienestar animal. Fiscalización agroalimentaria</li>
-                                    <li>Manejo de SSOP Y GMP en eventos de diferente magnitud.</li>
-                                </ul>
-                            </div>
-                        </div>    
-                        <div class="item">
-                            <h3 class="btn-item">Asuntos regulatorios</h3>
-                            <div class="item-content">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut excepturi consequuntur repellendus ex. Modi nobis consequuntur eligendi aperiam, sapiente dolor cupiditate pariatur!</p>
-                                <ul>
-                                    <li>Asesoramiento y capacitación de disposiciones vigentes.</li>
-                                    <li>Tramitación de Habilitaciones para  Industrias: Farmacéutica, Alimenticia,Química, Domisanitarios.</li>
-                                    <li>Tramitación y Habilitaciones Droguerías, Farmacias, Distribuidoras de          Productos Médicos.</li>
-                                    <li>Tramitación: registros productos médicos, medicamentos, domisanitarios  y alimentos.</li>
-                                    <li>Gestión 510k /FDA.</li>
-                                </ul>
-                            </div>
-                        </div>    
-                        <div class="item">
-                            <h3 class="btn-item">Diseño</h3>
-                            <div class="item-content">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut excepturi consequuntur repellendus ex. Modi nobis consequuntur eligendi aperiam, sapiente dolor cupiditate pariatur!</p>
-                                <ul>
-                                    <li>Estudio de factibilidad y diseño de plantas para la Industria Farmacéutica,(medicamentos, productos médicos), Alimenticia, Central de Esterilización, Droguerías,Laboratorios, Distribuidoras, Farmacias.</li>
-                                    <li>Diseño de productos para la salud, y  domisanitarios.</li>
-                                    <li>Análisis, desarrollo de procesos de esterilización y  equipamiento.</li>
-                                </ul>
-                            </div>
-                        </div>    
-                        <div class="item">
-                            <h3 class="btn-item">Medio ambiente</h3>
-                            <div class="item-content">
-                                <p>Hacemos:</p>
-                                <ul>
-                                    <li>Desarrollo de estudios de impacto ambiental</li>
-                                    <li>Planificación y Ejecución de Auditorías  Ambientales.</li>
-                                    <li>Implementación de normas ISO 14000.</li>
-                                </ul>
-                            </div>
-                        </div>    
-                        <div class="item">
-                            <h3 class="btn-item">Calibraciones y validaciones</h3>
-                            <div class="item-content">
-                                <p>Hacemos:</p>
-                                <ul>
-                                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo illo ad rerum porro quisquam.</li>
-                                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo illo ad rerum porro quisquam.</li>
-                                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo illo ad rerum porro quisquam.</li>
-                                </ul>
-                            </div>
-                        </div>    
-                        <div class="item">
-                            <h3 class="btn-item">Capacitación</h3>
-                            <div class="item-content">
-                                <p>Hacemos:</p>
-                                <ul>
-                                    <li>Diseño de programas de capacitaciones orientados a empresas, instituciones.</li>
-                                    <li>Taller Metrología y Buenas Prácticas de Manufactura (GMP).</li>
-                                    <li>Taller de SSO`P </li>
-                                    <li>Principios de HACCP, presentación de manuales.</li>
-                                    <li>Curso sobre Gestión de Calidad (Normas ISO).</li>
-                                    <li>Capacitación manipulación de alimentos.</li>
-                                    <li>Microbiología y Ecología Microbiana de los Alimentos.</li>
-                                    <li>Micología de los Alimentos.</li>
-                                    <li>Toxicología de los Alimentos.</li>
-                                    <li>Microbiología de los Alimentos.</li>
-                                    <li>Preservación de Alimentos.</li>
-                                    <li>Manejo de las Normas HACCP, SSOP, GMP.</li>
-                                </ul>
-                            </div>
-                        </div>    
-                        <div class="item">
-                            <h3 class="btn-item">Legal</h3>
-                            <div class="item-content">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit placeat perferendis ullam expedita. Delectus quos asperiores molestiae corporis autem? Ducimus doloribus cum unde nam dolorem qui inventore quam est similique.<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut excepturi consequuntur repellendus ex. Modi nobis consequuntur eligendi aperiam, sapiente dolor cupiditate pariatur!</p>
-                                <ul>
-                                    <li>Implementación, seguimiento y mantenimiento del sistemas de calidad,   independientemente del tamaño y sector de actuación de la empresa.</li>
-                                    <li>Mapeo, Análisis y Mejora Continua de los Procesos.</li>
-                                    <li>Evaluación y monitoreo de los controles requeridos en todas las etapas del proceso de gestión.</li>
-                                    <li>Implementación de Normas ISO: 9001, 9004, 13485, 14971.</li>
-                                    <li>Asesoramiento en Control de No-Conformidades, Acciones Correctivas,  Acciones Preventivas, Reclamos de Clientes y Mejoras Continuas.</li>
-                                    <li>Planificación y  Ejecución de Auditorías de los sistemas de calidad.</li>
-                                    <li>Planificación y Ejecución de Auditorías ISO 9001, ISO 13485.</li>
-                                    <li>Asesoramiento  para el control de los dispositivos de seguimiento y de   medición.</li>
-                                    <li>Capacitación y asesoramiento del  personal responsable del aseguramiento  
-                                        de  la calidad.</li>
-                                    <li>Asesoramiento  y seguimiento para lograr  certificación de la norma  ISO 9001.</li>
-                                    <li>Confección de la documentación requerida en un Sistema de Gestión de  Calidad  (Política de Calidad, Manual de Calidad, Manual de Procedimientos, etc.).</li>
-                                </ul>
-                            </div>
-                        </div>    
-                        <div class="item">
-                            <h3 class="btn-item">Otros Servicios</h3>
-                            <div class="item-content">
-                                <p>Hacemos:</p>
-                                <ul>
-                                    <li>Gestión de comercialización de medicamentos, dietética, productos naturistas,  domisanitarios, insumos esterilización, productos médicos y cosméticos.</li>
-                                    <li>Diseño especializado de vademécum.</li>
-                                    <li>Auditoría de recetas y del servicio prestado.</li>
-                                    <li>Gestión de subsidios en Organismos Públicos y ONGs  para la realización de capacitaciones</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section> -->
 
     <!--============================================================= -->
     <!-- CONTACTO -->
@@ -450,19 +290,13 @@
               <li class="nav-item"><a href="#Contacto" class="nav-link px-2 text-muted">Contacto</a></li>
             </ul>
             
-            <p class="text-center text-muted mb-0">&copy; 2021 TB Consultoría, Inc</p>
+            <p class="text-center text-muted mb-0">&copy; 2022 TB Consultoría, Inc</p>
             <div class="col-12 d-flex justify-content-end px-2">
-            <span><p class="mb-1">Desarrollado por:</p><img src="./img/dzko_dev.jpg" alt="" style="height:50px;width:auto;border-radius:5px;"></span>
+            <span><p class="mb-1">Desarrollado por:</p><img src="./img/dzko_dev.jpg" alt="" class="dev-logo"></span>
             </div>
         </footer>
     </div>
 
-
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script> -->
     <script src="libs/bootstrap-5.2.0/dist/js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/index.js"></script>
